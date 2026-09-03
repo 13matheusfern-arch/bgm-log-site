@@ -1,0 +1,970 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #ffffff;
+
+    background: #05080b;
+
+    line-height: 1.6;
+}
+
+
+img {
+    max-width: 100%;
+
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+.container {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+.header {
+    height: 110px;
+
+    background: #05080b;
+
+    display: flex;
+
+    align-items: center;
+
+    border-bottom: 1px solid #151d25;
+
+    position: relative;
+
+    z-index: 100;
+}
+
+
+.header-content {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0 35px 0 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.logo-link {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+}
+
+
+.logo {
+    width: 230px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter: none;
+
+    opacity: 0.75;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.logo:hover {
+    opacity: 1;
+}
+
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 34px;
+}
+
+
+.menu a {
+    position: relative;
+
+    color: #d8dde1;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    padding: 10px 0;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.menu a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #f5b400;
+
+    transition:
+        width 0.3s ease;
+}
+
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 560px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    background-image: url("../img/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO - IMAGEM MAIS CLARA
+========================================================= */
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(2, 5, 8, 0.78),
+        rgba(2, 5, 8, 0.55),
+        rgba(2, 5, 8, 0.25)
+    );
+}
+
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.hero-text {
+    max-width: 650px;
+
+    color: #ffffff;
+}
+
+
+.hero-text h1 {
+    font-size: 48px;
+
+    line-height: 1.12;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-text h1 span {
+    color: #f5b400;
+}
+
+
+.hero-text p {
+    font-size: 18px;
+
+    max-width: 540px;
+
+    margin-bottom: 30px;
+
+    color: #e1e5e8;
+}
+
+
+.btn {
+    display: inline-block;
+
+    padding: 15px 27px;
+
+    background: #f5b400;
+
+    color: #0a1118;
+
+    font-weight: bold;
+
+    border-radius: 4px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.btn:hover {
+    background: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+
+
+/* =========================================================
+   TÍTULOS
+========================================================= */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.section-title h2 {
+    font-size: 34px;
+
+    color: #ffffff;
+
+    font-weight: 800;
+}
+
+
+.linha {
+    width: 45px;
+
+    height: 4px;
+
+    background: #f5b400;
+
+    margin: 12px auto;
+}
+
+
+.section-title p {
+    color: #9da8b1;
+
+    font-size: 16px;
+}
+
+
+
+/* =========================================================
+   A EMPRESA
+========================================================= */
+
+.empresa {
+    padding: 90px 0;
+
+    background: #080d12;
+
+    scroll-margin-top: 20px;
+}
+
+
+.empresa-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+
+.empresa-text h2 {
+    font-size: 34px;
+
+    color: #ffffff;
+}
+
+
+.empresa-text .linha {
+    margin: 12px 0 25px;
+}
+
+
+.empresa-text > p {
+    color: #b8c1c8;
+
+    margin-bottom: 15px;
+
+    font-size: 16px;
+}
+
+
+.empresa-imagem {
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background: #0d151d;
+
+    min-height: 330px;
+}
+
+
+.empresa-imagem img {
+    width: 100%;
+
+    height: 330px;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.empresa-imagem:hover img {
+    transform: scale(1.04);
+}
+
+
+.empresa-diferenciais {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 35px;
+}
+
+
+.empresa-diferenciais strong {
+    display: block;
+
+    color: #f5b400;
+
+    font-size: 15px;
+
+    margin-bottom: 5px;
+}
+
+
+.empresa-diferenciais p {
+    font-size: 13px;
+
+    color: #929da6;
+}
+
+
+
+/* =========================================================
+   PRODUTOS
+========================================================= */
+
+.produtos {
+    padding: 90px 0;
+
+    background: #05080b;
+
+    scroll-margin-top: 20px;
+}
+
+
+.produtos-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.produto-card {
+    background: #0d151d;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    border: 1px solid #1b2732;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.produto-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #f5b400;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+
+.produto-card > img {
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.produto-card:hover > img {
+    transform: scale(1.04);
+}
+
+
+.produto-info {
+    padding: 25px;
+}
+
+
+.produto-info h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+.produto-info p {
+    color: #aeb8c0;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================================================
+   DIFERENCIAIS
+========================================================= */
+
+.diferenciais {
+    padding: 75px 0;
+
+    background: #030609;
+
+    color: #ffffff;
+
+    scroll-margin-top: 20px;
+}
+
+
+.diferenciais .section-title h2 {
+    color: #ffffff;
+}
+
+
+.diferenciais-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.diferencial {
+    text-align: center;
+
+    padding: 15px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.diferencial:hover {
+    transform: translateY(-5px);
+}
+
+
+.diferencial span {
+    display: flex;
+
+    width: 60px;
+
+    height: 60px;
+
+    margin: 0 auto 20px;
+
+    border: 2px solid #f5b400;
+
+    border-radius: 50%;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    color: #f5b400;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.diferencial:hover span {
+    transform: scale(1.1);
+
+    background: rgba(245, 180, 0, 0.08);
+}
+
+
+.diferencial h3 {
+    font-size: 15px;
+
+    margin-bottom: 10px;
+
+    color: #ffffff;
+}
+
+
+.diferencial p {
+    color: #9da8b1;
+
+    font-size: 13px;
+}
+
+
+
+/* =========================================================
+   CONTATO
+========================================================= */
+
+.contato {
+    padding: 75px 0;
+
+    background: #080d12;
+
+    scroll-margin-top: 20px;
+}
+
+
+.contato-content {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+.contato-texto h2 {
+    font-size: 32px;
+
+    color: #ffffff;
+}
+
+
+.contato-texto .linha {
+    margin: 12px 0 20px;
+}
+
+
+.contato-texto p {
+    color: #aeb8c0;
+
+    max-width: 420px;
+}
+
+
+
+/* =========================================================
+   CARDS DE CONTATO
+========================================================= */
+
+.contato-info {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.contato-card {
+    padding: 22px 15px;
+
+    background: #0d151d;
+
+    border-left: 4px solid #f5b400;
+
+    border-radius: 4px;
+
+    min-height: 120px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.contato-card:hover {
+    transform: translateY(-5px);
+
+    background: #111d27;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+
+.contato-icone {
+    width: 42px;
+
+    height: 42px;
+
+    margin-bottom: 10px;
+
+    background: #f5b400;
+
+    color: #0a1118;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+}
+
+
+.contato-card strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+.contato-card span {
+    display: block;
+
+    color: #aeb8c0;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    word-break: break-word;
+}
+
+
+
+/* =========================================================
+   RODAPÉ
+========================================================= */
+
+.footer {
+    padding: 22px;
+
+    background: #020406;
+
+    color: #7f8a93;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    border-top: 1px solid #121a21;
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .header-content {
+        padding-right: 25px;
+    }
+
+
+    .menu {
+        gap: 18px;
+    }
+
+
+    .menu a {
+        font-size: 12px;
+    }
+
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+
+    .empresa-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .produtos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .diferenciais-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .contato-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contato-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        height: auto;
+
+        min-height: 85px;
+    }
+
+
+    .header-content {
+        padding: 12px 15px;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .logo {
+        width: 170px;
+    }
+
+
+    .menu {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 8px 18px;
+    }
+
+
+    .menu a {
+        font-size: 11px;
+
+        padding: 5px 0;
+    }
+
+
+    .hero {
+        min-height: 600px;
+
+        background-position: center;
+    }
+
+
+    .hero-text {
+        text-align: center;
+
+        margin: 0 auto;
+    }
+
+
+    .hero-text h1 {
+        font-size: 31px;
+    }
+
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+
+    .empresa,
+    .produtos,
+    .contato {
+        padding: 60px 0;
+    }
+
+
+    .section-title h2,
+    .empresa-text h2,
+    .contato-texto h2 {
+        font-size: 28px;
+    }
+
+
+    .empresa-diferenciais {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .diferenciais {
+        padding: 60px 0;
+    }
+
+
+    .diferenciais-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .contato-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contato-card {
+        min-height: 100px;
+
+        flex-direction: row;
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+        gap: 15px;
+
+        padding: 18px;
+    }
+
+
+    .contato-icone {
+        flex-shrink: 0;
+
+        margin-bottom: 0;
+    }
+
+}

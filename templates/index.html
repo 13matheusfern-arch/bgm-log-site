@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="color-scheme"
+        content="dark"
+    >
+
+    <title>
+        BGM Log e Comércio de Postes
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="header-content">
+
+            <a
+                href="#inicio"
+                class="logo-link"
+            >
+
+                <img
+                    src="{{ url_for('static', filename='img/logo.png') }}"
+                    alt="BGM Log e Comércio de Postes"
+                    class="logo"
+                >
+
+            </a>
+
+
+            <nav class="menu">
+
+                <a href="#inicio">
+                    INÍCIO
+                </a>
+
+                <a href="#empresa">
+                    EMPRESA
+                </a>
+
+                <a href="#produtos">
+                    PRODUTOS
+                </a>
+
+                <a href="#diferenciais">
+                    DIFERENCIAIS
+                </a>
+
+                <a href="#contato">
+                    CONTATO
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section
+        class="hero"
+        id="inicio"
+    >
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <h1>
+
+                    SOLUÇÕES COMPLETAS
+
+                    <span>
+                        PARA ILUMINAÇÃO,
+                    </span>
+
+                    ELÉTRICOS E SINALIZAÇÃO VIÁRIA.
+
+                </h1>
+
+
+                <p>
+
+                    Materiais para iluminação pública,
+                    materiais elétricos e sinalização viária
+                    com qualidade e eficiência.
+
+                </p>
+
+
+                <a
+                    href="#produtos"
+                    class="btn"
+                >
+
+                    CONHEÇA NOSSOS PRODUTOS
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         A EMPRESA
+    ====================================================== -->
+
+    <section
+        class="empresa"
+        id="empresa"
+    >
+
+        <div class="container empresa-content">
+
+
+            <div class="empresa-text">
+
+                <h2>
+                    A EMPRESA
+                </h2>
+
+                <div class="linha"></div>
+
+
+                <p>
+
+                    A BGM Log e Comércio de Postes atua no
+                    fornecimento de materiais para iluminação
+                    pública, materiais elétricos e sinalização
+                    viária.
+
+                </p>
+
+
+                <p>
+
+                    Trabalhamos com compromisso, qualidade e
+                    agilidade para atender às necessidades
+                    de nossos clientes.
+
+                </p>
+
+
+                <div class="empresa-diferenciais">
+
+
+                    <div>
+
+                        <strong>
+                            QUALIDADE
+                        </strong>
+
+                        <p>
+                            Produtos e materiais de qualidade.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            EXPERIÊNCIA
+                        </strong>
+
+                        <p>
+                            Atendimento profissional e dedicado.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            CONFIANÇA
+                        </strong>
+
+                        <p>
+                            Compromisso com nossos clientes.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="empresa-imagem">
+
+                <img
+                    src="{{ url_for('static', filename='img/postes.jpg') }}"
+                    alt="Postes e materiais da BGM"
+                >
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PRODUTOS
+    ====================================================== -->
+
+    <section
+        class="produtos"
+        id="produtos"
+    >
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <h2>
+                    NOSSOS PRODUTOS
+                </h2>
+
+                <div class="linha"></div>
+
+                <p>
+                    Soluções para diferentes necessidades
+                    e projetos.
+                </p>
+
+            </div>
+
+
+
+            <div class="produtos-grid">
+
+
+                <!-- ILUMINAÇÃO PÚBLICA -->
+
+                <div class="produto-card">
+
+                    <img
+                        src="{{ url_for('static', filename='img/iluminacao.jpg') }}"
+                        alt="Iluminação pública"
+                    >
+
+
+                    <div class="produto-info">
+
+                        <h3>
+                            ILUMINAÇÃO PÚBLICA
+                        </h3>
+
+
+                        <p>
+
+                            Postes, luminárias, braços, relés,
+                            conectores e demais materiais para
+                            sistemas de iluminação pública.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MATERIAIS ELÉTRICOS -->
+
+                <div class="produto-card">
+
+                    <img
+                        src="{{ url_for('static', filename='img/eletricos.jpg') }}"
+                        alt="Materiais elétricos"
+                    >
+
+
+                    <div class="produto-info">
+
+                        <h3>
+                            MATERIAIS ELÉTRICOS
+                        </h3>
+
+
+                        <p>
+
+                            Cabos, fios, conectores, caixas,
+                            eletrodutos e demais materiais
+                            para instalações elétricas.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SINALIZAÇÃO VIÁRIA -->
+
+                <div class="produto-card">
+
+                    <img
+                        src="{{ url_for('static', filename='img/sinalizacao.jpg') }}"
+                        alt="Sinalização viária"
+                    >
+
+
+                    <div class="produto-info">
+
+                        <h3>
+                            SINALIZAÇÃO VIÁRIA
+                        </h3>
+
+
+                        <p>
+
+                            Defensas metálicas, Colunas,
+                            Braço Projetado e elementos de
+                            fixação para sinalização viária.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         DIFERENCIAIS
+    ====================================================== -->
+
+    <section
+        class="diferenciais"
+        id="diferenciais"
+    >
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <h2>
+                    NOSSOS DIFERENCIAIS
+                </h2>
+
+                <div class="linha"></div>
+
+            </div>
+
+
+
+            <div class="diferenciais-grid">
+
+
+                <div class="diferencial">
+
+                    <span>
+                        ★
+                    </span>
+
+                    <h3>
+                        PRODUTOS DE QUALIDADE
+                    </h3>
+
+                    <p>
+
+                        Trabalhamos com materiais
+                        selecionados para nossos clientes.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="diferencial">
+
+                    <span>
+                        🚛
+                    </span>
+
+                    <h3>
+                        AGILIDADE
+                    </h3>
+
+                    <p>
+
+                        Compromisso com prazos e
+                        atendimento eficiente.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="diferencial">
+
+                    <span>
+                        ⚡
+                    </span>
+
+                    <h3>
+                        ATENDIMENTO
+                    </h3>
+
+                    <p>
+
+                        Atendimento focado nas
+                        necessidades de cada cliente.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="diferencial">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    <h3>
+                        CONFIANÇA
+                    </h3>
+
+                    <p>
+
+                        Construímos relações duradouras
+                        com nossos clientes.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTATO
+    ====================================================== -->
+
+    <section
+        class="contato"
+        id="contato"
+    >
+
+        <div class="container contato-content">
+
+
+            <div class="contato-texto">
+
+                <h2>
+                    ENTRE EM CONTATO
+                </h2>
+
+                <div class="linha"></div>
+
+
+                <p>
+
+                    Entre em contato com nossa equipe
+                    para obter mais informações sobre
+                    nossos produtos e serviços.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="contato-info">
+
+
+                <!-- TELEFONE -->
+
+                <a
+                    href="tel:+551140567871"
+                    class="contato-card"
+                >
+
+                    <div class="contato-icone">
+                        ☎
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            FÁBRICA
+                        </strong>
+
+                        <span>
+                            (11) 4056-7871
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- E-MAIL -->
+
+                <a
+                    href="mailto:bgmlog.comercio@gmail.com"
+                    class="contato-card"
+                >
+
+                    <div class="contato-icone">
+                        ✉
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            E-MAIL
+                        </strong>
+
+                        <span>
+                            bgmlog.comercio@gmail.com
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- LOCALIZAÇÃO -->
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Diadema%2C%20SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato-card"
+                >
+
+                    <div class="contato-icone">
+                        📍
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            LOCALIZAÇÃO
+                        </strong>
+
+                        <span>
+                            Diadema - SP
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <p>
+
+            © 2026 BGM Log e Comércio de Postes.
+            Todos os direitos reservados.
+
+        </p>
+
+    </footer>
+
+
+
+    <script
+        src="{{ url_for('static', filename='js/script.js') }}"
+    ></script>
+
+
+</body>
+
+</html>
