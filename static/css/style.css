@@ -105,7 +105,7 @@ a {
 
     filter: none;
 
-    opacity: 0.75;
+    opacity: 1;
 
     transition:
         opacity 0.3s ease;
@@ -204,7 +204,7 @@ a {
 
 
 /* =========================================================
-   HERO - IMAGEM MAIS CLARA
+   HERO - SOBREPOSIÇÃO
 ========================================================= */
 
 .hero-overlay {
@@ -214,8 +214,8 @@ a {
 
     background: linear-gradient(
         90deg,
-        rgba(2, 5, 8, 0.78),
-        rgba(2, 5, 8, 0.55),
+        rgba(2, 5, 8, 0.82),
+        rgba(2, 5, 8, 0.58),
         rgba(2, 5, 8, 0.25)
     );
 }
@@ -229,14 +229,14 @@ a {
 
 
 .hero-text {
-    max-width: 650px;
+    max-width: 700px;
 
     color: #ffffff;
 }
 
 
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 46px;
 
     line-height: 1.12;
 
@@ -247,6 +247,8 @@ a {
 
 
 .hero-text h1 span {
+    display: block;
+
     color: #f5b400;
 }
 
@@ -254,13 +256,34 @@ a {
 .hero-text p {
     font-size: 18px;
 
-    max-width: 540px;
+    line-height: 1.6;
 
-    margin-bottom: 30px;
+    max-width: 600px;
+
+    margin-bottom: 20px;
 
     color: #e1e5e8;
 }
 
+
+/* Texto institucional */
+
+.hero-text .hero-descricao {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 570px;
+
+    margin-bottom: 30px;
+
+    color: #b8c1c8;
+}
+
+
+/* =========================================================
+   BOTÃO
+========================================================= */
 
 .btn {
     display: inline-block;
@@ -894,12 +917,29 @@ a {
 
 
     .hero-text h1 {
-        font-size: 31px;
+        font-size: 30px;
+
+        line-height: 1.15;
+
+        margin-bottom: 20px;
     }
 
 
     .hero-text p {
         font-size: 16px;
+
+        line-height: 1.6;
+
+        margin-bottom: 18px;
+    }
+
+
+    .hero-text .hero-descricao {
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        margin-bottom: 25px;
     }
 
 
